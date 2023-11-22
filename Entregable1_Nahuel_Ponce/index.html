@@ -1,11 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cotizador Warehouse</title>
-</head>
-<body>
-<script src="main.js"></script>    
-</body>
+  </head>
+  <body>
+    <h1>Formulario para Cotización de Servicio de Warehousing</h1>
+
+    <form>
+      <h3>Datos de Contacto</h3>
+
+      <fieldset>
+        <ul>
+          <li>
+            <label for="name"> Empresa a cotizar </label>
+            <input type="text" id="name" required />
+          </li>
+        </ul>
+
+        <ul>
+          <li>
+            <label for="servicio"> Tipo de Servicio </label>
+            <input type="text" id="servicio" required />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="responsable"> Comercial Responsable </label>
+            <input type="text" id="responsable" required />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="analista"> Persona a cargo de la Cotización </label>
+            <input type="text" id="analista" required />
+          </li>
+        </ul>
+      </fieldset>
+
+      <h3>Datos del Servicio</h3>
+
+      <fieldset>
+        <ul>
+          <li>
+            <label for="frecuencia"> Frecuencia de Flujo de Stock </label>
+            <br /><br />
+            <label> <input type="radio" name="frecuencia" /> Diario </label>
+            <label> <input type="radio" name="frecuencia" /> Semanal </label>
+            <label> <input type="radio" name="frecuencia" /> Quincenal </label>
+            <label> <input type="radio" name="frecuencia" /> Mensual </label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="fecha"> Fecha de Inicio de Servicio</label>
+            <input type="date" id="fecha" required />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="unidades"> Unidades a Almacenar</label>
+            <input type="number" id="unidades" required />
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="zona"> Zona de Operación </label>
+            <select>
+              <option>Avellaneda</option>
+              <option>Tortuguitas</option>
+              <option>Belgrano</option>
+              <option>Velez Sarfield</option>
+            </select>
+          </li>
+        </ul>
+      </fieldset>
+
+      <h3>Actividades a Relizar</h3>
+      <ul>
+        <li>
+          <label for="recepcion"> Recepcion </label>
+          <input type="checkbox" name="recepcion" id="1">
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label for="descarga"> Descarga </label>
+          <input type="checkbox" name="descarga" id="2">
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label for="ingreso"> Ingreso </label>
+          <input type="checkbox" name="ingreso" id="3">
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label for="almacenamiento"> Almacenamiento </label>
+          <input type="checkbox" name="almacenamiento" id="4">
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label for="preparacion"> Preparacion </label>
+          <input type="checkbox" name="preparacion" id="5">
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label for="despacho"> Despacho </label>
+          <input type="checkbox" name="despacho" id="6">
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <label for="ninguna"> Ninguna </label>
+          <input type="checkbox" name="ninguna" id="7">
+        </li>
+      </ul>
+
+      <br /><br />
+
+      <input type="reset" value="Resetear" />
+      <input type="submit" value="Aceptar" />
+    </form>
+
+    <script src="main.js"></script>
+  </body>
 </html>

@@ -32,7 +32,7 @@ const actividades = [
 
   //INGRESO DE UNIDADES A COTIZAR
 // Solicitudes unidades a operar
-let unidades = parseInt(prompt("Ingrese las cantidades deseadas: "));
+let unidades = ;
 
   //FUNCIONES DE COSTEO
 //Recepcion
@@ -131,8 +131,7 @@ function calcularCostoDespacho(unidades) {
   //ARMADO DEL BUCLE PARA SOLICITAR AL USUARIO LAS INSTRUSCCIONES A OPERAR
 const seleccionarActividad = () => {
   let actividad = prompt(
-    "Seleccione una actividad: " + actividades.join(" - \n")
-  );
+  
   return actividad;
 };
 
